@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "setup",
+      "setup": "python3 -m venv venv",
+      "run": "venv/bin/python -m pip install -U pip; venv/bin/python -m pip install setuptools pytest pytest-timeout flake8 pep8-naming flake8-docstrings numpy",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": " part-1-install",
+      "setup": "",
+      "run": "venv/bin/python -m pip install -e .",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "part-2-1",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q2_1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "part-2-2",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q2_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "part-2-3",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q2_3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "part-2-4",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q2_4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "part-3-1",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q3_1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "part 3-2",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q3_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "part 3-3",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q3_3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "part-3-4",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q3_4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "part-3-5",
+      "setup": "",
+      "run": "venv/bin/python -m pytest tests/ -m q3_5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "part-4",
+      "setup": "",
+      "run": "venv/bin/python -m flake8 printer/",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    }
+  ]
+}
